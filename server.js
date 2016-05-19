@@ -6,7 +6,7 @@ var static = require('node-static');
 
 console.log('PARENT: ', module.parent? true: false);
 
-var file = new static.Server('./client/dest');
+var file = new static.Server('./client/dist');
 function start() {
 	 
 	require('http').createServer(function (request, response) {
